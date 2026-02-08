@@ -110,6 +110,12 @@
             font-weight: 500;
         }
         
+        .tag.blocked {
+            background: rgba(255, 100, 100, 0.15);
+            color: #FF6464;
+            border: 1px solid rgba(255, 100, 100, 0.3);
+        }
+        
         .priority-high {
             background: rgba(255, 100, 100, 0.15);
             color: #FF6464;
@@ -134,117 +140,126 @@
 <body>
     <div class="header">
         <h1>🚀 HueleBicho Kanban Board</h1>
-        <div class="last-updated">Last updated: <span id="last-update">2026-02-08 4:18 AM EST</span> | Status: ✅ Budge marketing strategy complete - ready to execute</div>
+        <div class="last-updated">Last updated: <span id="last-update">2026-02-08 3:05 PM EST</span> | Status: 🚧 Waiting on credentials - 2 blockers (Convex + Supabase)</div>
     </div>
 
     <div class="board">
-        <!-- NOW -->
+        <!-- BLOCKED -->
         <div class="column">
             <div class="column-header">
-                <span class="status-icon">🔥</span>
-                <span>NOW (Next 2 Hours)</span>
+                <span class="status-icon">🚫</span>
+                <span>BLOCKED (Need Alex)</span>
             </div>
             
             <div class="card">
-                <div class="card-title">✅ Budge MVP Complete</div>
-                <div class="card-desc">All 4 priorities done: Orb, Dopamine, Sounds, Notifications</div>
+                <div class="card-title">🎛️ Mission Control - Convex Setup</div>
+                <div class="card-desc">Dashboard fully built (Activity Feed + Calendar + Search). Just needs Convex account setup via browser. Takes 2 minutes.</div>
                 <div class="card-meta">
-                    <span class="tag">COMPLETED</span>
-                    <span class="time-estimate">Done: 11:19 PM</span>
+                    <span class="tag blocked">[BLOCKED]</span>
+                    <span class="time-estimate">Need: Computer + browser access</span>
                 </div>
             </div>
             
             <div class="card">
-                <div class="card-title">✅ Acne App - Competitive Analysis</div>
-                <div class="card-desc">Market research complete. Identified budget-first positioning gap.</div>
+                <div class="card-title">🔧 Acne App - Supabase Credentials</div>
+                <div class="card-desc">Backend schema complete (6 tables, RLS, indexes). Need Supabase project created or credentials to existing account.</div>
                 <div class="card-meta">
-                    <span class="tag">COMPLETED</span>
-                    <span class="time-estimate">Done: 2:45 AM</span>
+                    <span class="tag blocked">[BLOCKED]</span>
+                    <span class="time-estimate">Need: Decision + credentials</span>
                 </div>
             </div>
             
             <div class="card">
-                <div class="card-title">✅ AI Provider Research</div>
-                <div class="card-desc">Gemini Flash recommended (10x cheaper than GPT-4V)</div>
+                <div class="card-title">🧪 Budge QA Testing</div>
+                <div class="card-desc">Code review complete. Functional testing blocked until you run the app. Report ready: budge-qa-report.md</div>
                 <div class="card-meta">
-                    <span class="tag">COMPLETED</span>
-                    <span class="time-estimate">Done: 3:25 AM</span>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-title">✅ Weekly Work Plan (Feb 10-16)</div>
-                <div class="card-desc">30h planned: 60% acne app MVP, 7% Budge support, 13% exploration</div>
-                <div class="card-meta">
-                    <span class="tag">COMPLETED</span>
-                    <span class="time-estimate">Done: 3:45 AM</span>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-title">✅ New App Opportunities Research</div>
-                <div class="card-desc">3 ideas researched. FlareGuard (chronic pain) = top pick ⭐⭐⭐⭐⭐</div>
-                <div class="card-meta">
-                    <span class="tag">COMPLETED</span>
-                    <span class="time-estimate">Done: 4:45 AM</span>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-title">✅ Acne App UX Flow + Results Screen</div>
-                <div class="card-desc">Redesigned results screen with social-shareable card style per Alex's request</div>
-                <div class="card-meta">
-                    <span class="tag">COMPLETED</span>
-                    <span class="time-estimate">Done: 3:42 AM</span>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-title">✅ Budge Marketing & GTM Strategy</div>
-                <div class="card-desc">Complete launch plan: TikTok content, influencer partnerships, $10K MRR path by Month 6</div>
-                <div class="card-meta">
-                    <span class="tag">COMPLETED</span>
-                    <span class="time-estimate">Done: 4:18 AM</span>
+                    <span class="tag blocked">[BLOCKED]</span>
+                    <span class="time-estimate">Need: You to run app</span>
                 </div>
             </div>
         </div>
 
-        <!-- NEXT (Next 12 Hours) -->
+        <!-- COMPLETED TODAY -->
         <div class="column">
             <div class="column-header">
-                <span class="status-icon">⏭️</span>
-                <span>NEXT (12 Hours)</span>
+                <span class="status-icon">✅</span>
+                <span>COMPLETED (Today)</span>
             </div>
             
             <div class="card">
-                <div class="card-title">🧪 QA Budge</div>
-                <div class="card-desc">Code review complete. Functional testing blocked until you run app.</div>
+                <div class="card-title">✅ Opus: Acne Product Database v2</div>
+                <div class="card-desc">100 products (vs 50), 64 brands, usage instructions, derm flags. File: acne-app-product-database-v2.json</div>
                 <div class="card-meta">
-                    <span class="tag">[BLOCKED]</span>
-                    <span class="time-estimate">Report ready: budge-qa-report.md</span>
+                    <span class="tag">COMPLETED</span>
+                    <span class="time-estimate">11:17 AM (Opus 7min)</span>
                 </div>
             </div>
             
             <div class="card">
-                <div class="card-title">📱 Acne App Prototype</div>
-                <div class="card-desc">Build interactive Figma prototype with core flows</div>
+                <div class="card-title">✅ Opus: Budge TikTok Scripts</div>
+                <div class="card-desc">10 videos with second-by-second timing, emotional arcs, templates. File: budge-tiktok-scripts-opus.md</div>
                 <div class="card-meta">
-                    <span class="tag priority-high">HIGH PRIORITY</span>
-                    <span class="time-estimate">~3h</span>
+                    <span class="tag">COMPLETED</span>
+                    <span class="time-estimate">11:15 AM (Opus 5min)</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">✅ Opus: Pet Psychic Launch Plan</div>
+                <div class="card-desc">56KB plan with 3hr quickstart, 25+ content pieces, influencer templates. File: pet-psychic-14-day-launch-plan.md</div>
+                <div class="card-meta">
+                    <span class="tag">COMPLETED</span>
+                    <span class="time-estimate">11:17 AM (Opus 6min)</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">✅ Mission Control Dashboard</div>
+                <div class="card-desc">Full NextJS app: Activity feed, calendar view, global search. File: mission-control-summary.md</div>
+                <div class="card-meta">
+                    <span class="tag">COMPLETED</span>
+                    <span class="time-estimate">10:00 AM</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">✅ Acne App Database Schema</div>
+                <div class="card-desc">6 tables + RLS + indexes. Production-ready. File: acne-app-backend/SETUP.md</div>
+                <div class="card-meta">
+                    <span class="tag">COMPLETED</span>
+                    <span class="time-estimate">9:20 AM</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">✅ Market Digest (Morning)</div>
+                <div class="card-desc">Crypto + stock summary for Alex & Benjamin. BTC ~$68.9K, NVIDIA +7.87%</div>
+                <div class="card-meta">
+                    <span class="tag">COMPLETED</span>
+                    <span class="time-estimate">7:12 AM</span>
                 </div>
             </div>
         </div>
 
-        <!-- SOON (This Week) -->
+        <!-- READY TO START -->
         <div class="column">
             <div class="column-header">
-                <span class="status-icon">📅</span>
-                <span>SOON (This Week)</span>
+                <span class="status-icon">⚡</span>
+                <span>READY (No Blockers)</span>
             </div>
             
             <div class="card">
-                <div class="card-title">📊 Acne App Market Research</div>
-                <div class="card-desc">Competitor analysis, pricing models, user pain points</div>
+                <div class="card-title">🔬 FlareGuard Deep-Dive</div>
+                <div class="card-desc">Flesh out the chronic pain app (rated 5-star in research). Full product specs, wireframes, MVP scope.</div>
+                <div class="card-meta">
+                    <span class="tag priority-high">HIGH VALUE</span>
+                    <span class="time-estimate">~3h with Opus</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">🔌 Mission Control Integration</div>
+                <div class="card-desc">Build auto-logging scripts to capture OpenClaw activities. Can write code now, test when Convex is live.</div>
                 <div class="card-meta">
                     <span class="tag priority-medium">MEDIUM</span>
                     <span class="time-estimate">~2h</span>
@@ -252,20 +267,20 @@
             </div>
             
             <div class="card">
-                <div class="card-title">💰 Acne App Revenue Model</div>
-                <div class="card-desc">Subscription tiers, freemium vs premium, affiliate partnerships</div>
+                <div class="card-title">🐾 Pet Psychic Content Creation</div>
+                <div class="card-desc">Create 5 Instagram carousels, generate sample readings, or film TikToks (if pets available)</div>
                 <div class="card-meta">
                     <span class="tag priority-medium">MEDIUM</span>
-                    <span class="time-estimate">~1h</span>
+                    <span class="time-estimate">~2h</span>
                 </div>
             </div>
             
             <div class="card">
-                <div class="card-title">🔧 Budge Bug Fixes</div>
-                <div class="card-desc">Fix any issues found during QA testing</div>
+                <div class="card-title">🧠 MEMORY.md Update</div>
+                <div class="card-desc">Review daily logs, distill learnings, update long-term memory. Document model routing lesson.</div>
                 <div class="card-meta">
-                    <span class="tag">TBD</span>
-                    <span class="time-estimate">~2h</span>
+                    <span class="tag">MAINTENANCE</span>
+                    <span class="time-estimate">~30min</span>
                 </div>
             </div>
         </div>
@@ -278,34 +293,37 @@
             </div>
             
             <div class="card">
-                <div class="card-title">🎨 GlowScan AI (Paused)</div>
-                <div class="card-desc">Skin analysis app - deprioritized for now</div>
+                <div class="card-title">📱 Acne App Frontend</div>
+                <div class="card-desc">React Native app build (Expo). Blocked until backend is live.</div>
+                <div class="card-meta">
+                    <span class="tag">FUTURE</span>
+                    <span class="time-estimate">Depends on backend</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">🛍️ Product Database Expansion</div>
+                <div class="card-desc">Expand from 100 to 200+ products. Add more categories.</div>
+                <div class="card-meta">
+                    <span class="tag">FUTURE</span>
+                    <span class="time-estimate">~3h</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">📊 Budge Marketing Execution</div>
+                <div class="card-desc">Execute marketing strategy: film TikToks, influencer outreach, launch</div>
+                <div class="card-meta">
+                    <span class="tag">POST-QA</span>
+                    <span class="time-estimate">Ongoing</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-title">🎨 GlowScan (Paused)</div>
+                <div class="card-desc">Original skin analysis app - deprioritized</div>
                 <div class="card-meta">
                     <span class="tag">ON HOLD</span>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-title">💼 Payroll Automation SaaS</div>
-                <div class="card-desc">Not recommended (narrow market, high complexity)</div>
-                <div class="card-meta">
-                    <span class="tag">NOT PURSUING</span>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-title">🔊 Budge Voice Input</div>
-                <div class="card-desc">Requires dev build, Sr Dev will handle post-MVP</div>
-                <div class="card-meta">
-                    <span class="tag">SR DEV</span>
-                </div>
-            </div>
-            
-            <div class="card">
-                <div class="card-title">🔐 Budge Backend/Auth</div>
-                <div class="card-desc">Supabase/Firebase integration, cloud sync</div>
-                <div class="card-meta">
-                    <span class="tag">SR DEV</span>
                 </div>
             </div>
         </div>
