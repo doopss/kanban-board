@@ -140,7 +140,7 @@
 <body>
     <div class="header">
         <h1>🚀 HueleBicho Kanban Board</h1>
-        <div class="last-updated">Last updated: <span id="last-update">2026-02-08 7:20 PM EST</span> | Status: ✅ Mission Control detail modal deployed</div>
+        <div class="last-updated">Last updated: <span id="last-update">2026-02-08 11:45 PM EST</span> | Status: 🚫 Mission Control Vercel deployment blocked (config needed)</div>
     </div>
 
     <div class="board">
@@ -149,15 +149,6 @@
             <div class="column-header">
                 <span class="status-icon">🚫</span>
                 <span>BLOCKED (Need Alex)</span>
-            </div>
-            
-            <div class="card">
-                <div class="card-title">🎛️ Mission Control - Convex Setup</div>
-                <div class="card-desc">Dashboard fully built (Activity Feed + Calendar + Search). Just needs Convex account setup via browser. Takes 2 minutes.</div>
-                <div class="card-meta">
-                    <span class="tag blocked">[BLOCKED]</span>
-                    <span class="time-estimate">Need: Computer + browser access</span>
-                </div>
             </div>
             
             <div class="card">
@@ -170,11 +161,11 @@
             </div>
             
             <div class="card">
-                <div class="card-title">🐙 Mission Control GitHub Setup</div>
-                <div class="card-desc">Create GitHub repo for Mission Control and connect to Vercel. Enables auto-deploy on push instead of manual CLI deploys.</div>
+                <div class="card-title">🐙 Mission Control Vercel Deployment</div>
+                <div class="card-desc">Repo created (https://github.com/doopss/mission-control) but Vercel build fails. Issue: Workspace has multiple projects, Vercel can't find app/ dir. Fix: In Vercel dashboard → Settings → (need Root Directory option) OR delete/reimport project with root dir set to "mission-control".</div>
                 <div class="card-meta">
                     <span class="tag blocked">[BLOCKED]</span>
-                    <span class="time-estimate">Need: Alex to create repo</span>
+                    <span class="time-estimate">Need: Vercel config fix</span>
                 </div>
             </div>
         </div>
